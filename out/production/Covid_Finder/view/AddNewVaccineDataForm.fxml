@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="605.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddNewVaccineDataFormController">
+   <children>
+      <Label layoutX="247.0" layoutY="25.0" prefHeight="54.0" prefWidth="414.0" text="Enter A Vaccine Record" textFill="#005142">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="169.0" layoutY="181.0" onAction="#txtNameOnAction" onMouseClicked="#txtNameOnMouseClicked" prefHeight="27.0" prefWidth="237.0" promptText="Enter Your Name Here" />
+      <TextField fx:id="txtNIC" layoutX="169.0" layoutY="224.0" onAction="#txtNICOnAction" prefHeight="27.0" prefWidth="237.0" promptText="Enter Your Nic" />
+      <TextField fx:id="txtAge" layoutX="169.0" layoutY="303.0" onAction="#txtAgeOnAction" prefHeight="27.0" prefWidth="237.0" promptText="Enter Your Age Here" />
+      <TextField fx:id="txtContact" layoutX="169.0" layoutY="349.0" onAction="#txtContactOnAction" prefHeight="27.0" prefWidth="237.0" promptText="Enter Your Phone Number Here" />
+      <TextField fx:id="txtAddress" layoutX="538.0" layoutY="181.0" onAction="#txtAddressOnActon" prefHeight="27.0" prefWidth="297.0" promptText="Enter Your Address Here" />
+      <ComboBox fx:id="txtVaccine" layoutX="538.0" layoutY="224.0" prefHeight="27.0" prefWidth="297.0" promptText="Vaccine" />
+      <ComboBox fx:id="txtGender" layoutX="169.0" layoutY="265.0" prefHeight="25.0" prefWidth="237.0" promptText="Gender" />
+      <ComboBox fx:id="txtDose" layoutX="538.0" layoutY="264.0" prefHeight="27.0" prefWidth="297.0" promptText="Dose" />
+      <DatePicker fx:id="txtDate" layoutX="538.0" layoutY="303.0" prefHeight="27.0" prefWidth="297.0" promptText="Vaccinate Date" />
+      <TextField fx:id="txtMOHArea" layoutX="538.0" layoutY="349.0" onAction="#txtMOHAreaOnAction" prefHeight="27.0" prefWidth="297.0" promptText="MOH Area" />
+      <Button layoutX="505.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnSaveDataOnAction" prefHeight="35.0" prefWidth="153.0" style="-fx-background-color: #004461; -fx-background-radius: 20; -fx-border-radius: 20;" text="Save Data" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="730.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #6b0000; -fx-background-radius: 20; -fx-border-radius: 20;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtGetNIC1" layoutX="126.0" layoutY="112.0" onAction="#txtGetNICOnAction" prefHeight="27.0" prefWidth="323.0" promptText="Enter Your Nic" />
+      <Button layoutX="505.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnSOKOnAction" prefHeight="35.0" prefWidth="153.0" style="-fx-background-color: #004461; -fx-background-radius: 20; -fx-border-radius: 20;" text="OK" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblName" layoutX="61.0" layoutY="182.0" prefHeight="25.0" prefWidth="61.0" text="NAME  " textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGender" layoutX="61.0" layoutY="265.0" prefHeight="25.0" prefWidth="61.0" text="GENDER" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAge" layoutX="61.0" layoutY="304.0" prefHeight="25.0" prefWidth="61.0" text="AGE" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNIC" layoutX="61.0" layoutY="225.0" prefHeight="25.0" prefWidth="61.0" text="NIC" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="113.0" prefHeight="25.0" prefWidth="61.0" text="NIC" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContact" layoutX="58.0" layoutY="350.0" prefHeight="25.0" prefWidth="67.0" text="CONTACT" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAddress" layoutX="454.0" layoutY="182.0" prefHeight="25.0" prefWidth="67.0" text="ADDRESS" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVaccine" layoutX="454.0" layoutY="225.0" prefHeight="25.0" prefWidth="67.0" text="VACCINE" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDose" layoutX="454.0" layoutY="265.0" prefHeight="25.0" prefWidth="67.0" text="DOSE" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="454.0" layoutY="304.0" prefHeight="25.0" prefWidth="67.0" text="DATE" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMOH" layoutX="454.0" layoutY="350.0" prefHeight="25.0" prefWidth="80.0" text="MOH AREA" textFill="#004461">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblVaccineInformation" layoutX="45.0" layoutY="393.0" prefHeight="126.0" prefWidth="796.0">
+         <columns>
+            <TableColumn prefWidth="194.0" text="Vaccine" />
+            <TableColumn prefWidth="220.0" text="Does" />
+            <TableColumn prefWidth="175.0" text="Date" />
+            <TableColumn prefWidth="206.0" text="MOH" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
